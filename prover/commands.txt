@@ -1,0 +1,16 @@
+
+
+gevulot-cli --jsonurl "http://api.devnet.gevulot.com:9944" --keyfile <path-to-key>/localkey.pki \
+deploy \
+--name "some name" \
+--prover dbb522a8721f78d84c5bf9e78580db6a4f72c1399151d9bb43af0091a0ac2b27 \
+--provername '#testprover' \
+--proverimgurl 'https://<prover image>' \
+--verifier bfba462466d668dd549b3e960f6e929a63c36ef2c4a336a7b0ebd80936c1f8e1 \
+--verifiername '#testverifier' \
+--verifierimgurl 'https://<verifier image>'
+
+ops build first_try -c ../../gevulot-manifest.json
+
+gevulot-cli calculate-hash --file /home/yury/.ops/images/prover
+gevulot-cli calculate-hash --file /home/yury/.ops/images/verifier
