@@ -322,15 +322,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9fc0510504f03c51ada170672ac806f1f105a88aa97a5281117e1ddc3368e51a"
 
 [[package]]
-name = "first_try"
-version = "0.1.0"
-dependencies = [
- "clap",
- "gevulot-common",
- "gevulot-shim",
-]
-
-[[package]]
 name = "fixedbitset"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -881,6 +872,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "213622a1460818959ac1181aaeb2dc9c7f63df720db7d788b3e24eacd1983e13"
 dependencies = [
  "prost",
+]
+
+[[package]]
+name = "prover"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "gevulot-common",
+ "gevulot-shim",
 ]
 
 [[package]]
